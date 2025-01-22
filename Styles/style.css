@@ -29,6 +29,10 @@
     height: 3.125rem;
     border: none;
 }
+.bttn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 /* home page styles */
 .homepage{
     max-width: 1440px;
@@ -280,7 +284,62 @@
     background: rgb(149, 178, 38);
 }
 /* footer  styles*/
-
+.p-4{
+    display: flex;
+    gap: 150px;
+    background: rgb(1, 172, 253);
+    padding: 123px 228px 174px 140px;
+}
+.p-4 .sec-1 .desc{
+    width: 399.02px;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+}
+.p-4 .heading{
+    width: 299.71px;
+    height: 81.65px;
+    justify-content: center;
+    align-items: center;
+}
+.header1{
+    color: rgb(255, 255, 255);
+    font-size: 42.14px;
+    font-weight: 700;
+}
+.head-container{
+    gap: 0px;
+}
+.p-4 .heading img{
+    height: 100%;
+}
+.p-4 .sec-2{
+    flex-direction: column;
+}
+.p-4 .sec-2 .naviga{
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+}
+.p-4 .sec-2 .naviga .text{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+}
+.p-4 .sec-2 .naviga a{
+    text-decoration: none;
+}
+.p-4 .sec-3 .keep{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: 700;
+}
+.p-4 .sec-3 .image{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 
 
@@ -288,6 +347,11 @@
 
 /* Media Queries */
 @media screen and (max-width: 576px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .homepage {
         padding: 0px;
         max-width: 100%;
@@ -418,7 +482,33 @@
         padding: 10px;
         font-size: 14px;
     }
-    
-    
+    /* page-4 adjustments */
+    .p-4{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header1{
+        font-size: 26px;
+    }
+    .p-4 .heading img{
+        height: 100%;
+    }
+    .p-4 .sec-1 .desc{
+        width: 100%;
+        font-size: 15px;
+    }
+    .p-4 .sec-2 .naviga .text{
+        font-size: 15px;
+    }
+    .p-4 .sec-3 .keep{
+        font-size: 15px;
+    }
+    .p-4 .sec-3 .image{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
 }
 
